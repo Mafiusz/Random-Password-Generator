@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <script
+            src="https://kit.fontawesome.com/33e116f8ab.js"
+            crossorigin="anonymous"
+        ></script>
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+            rel="stylesheet"
+        />
+        <link rel="shortcut icon" href="#" />
+        <link rel="stylesheet" href="style.css" />
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <div class="content">
+            <h1 class="heading-primary">Random Password Generator</h1>
+            <p class="details">
+                Create strong and secure passwords to keep your account safe
+                online
+            </p>
+            <div class="password-generator">
+                <div class="password-value">
+                    <span class="password">Password</span>
+                    <a href="#" class="btn-strong">very weak</a>
+                    <div class="icon-box">
+                        <i class="fa-solid fa-rotate-left icon-rotate"></i>
+                    </div>
+                </div>
+                <div class="password-copy">
+                    <a href="#" class="btn-copy">Copy</a>
+                </div>
+            </div>
+            <div class="password-length">
+                <div class="password-details">
+                    <p class="password-length-text">Password length:</p>
+                    <span class="character-used">1</span>
+                </div>
+                <div class="password-length-buttons">
+                    <a href="#" class="btn-change-length sub-sign"
+                        ><i class="ri-subtract-line"></i
+                    ></a>
+                    <div class="slider-container">
+                        <input
+                            type="range"
+                            class="slider"
+                            min="1"
+                            max="20"
+                            value="1"
+                        />
+                        <div class="slider-border"></div>
+                    </div>
+                    <a href="#" class="btn-change-length add-sign"
+                        ><i class="ri-add-line"></i
+                    ></a>
+                </div>
+            </div>
+            <div class="password-settings">
+                <p class="password-settings-description">Characters used:</p>
+                <div class="checks-box">
+                    <div class="check-box">
+                        <input
+                            type="checkbox"
+                            class="checkmark"
+                            name=""
+                            id="uppercase"
+                            checked
+                        />
+                        <label for="uppercase">ABC</label>
+                    </div>
+                    <div class="check-box">
+                        <input
+                            type="checkbox"
+                            class="checkmark"
+                            name=""
+                            id="lowercase"
+                            checked
+                        />
+                        <label for="lowercase">abc</label>
+                    </div>
+                    <div class="check-box">
+                        <input
+                            type="checkbox"
+                            class="checkmark"
+                            name=""
+                            id="numbers"
+                            checked
+                        />
+                        <label for="numbers">123</label>
+                    </div>
+                    <div class="check-box">
+                        <input
+                            type="checkbox"
+                            class="checkmark"
+                            name=""
+                            id="special-signs"
+                        />
+                        <label for="special-signs">#$&</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

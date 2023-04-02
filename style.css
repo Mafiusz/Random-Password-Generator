@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    border: none;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --very-weak-color: #f03e3e;
+    --good-color: #fcc419;
+    --strong-color: #38d9a9;
+    --very-strong-color: #364fc7;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+}
+
+.heading-primary {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    font-weight: 900;
+}
+
+.details {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.password-generator {
+    display: grid;
+    grid-template-columns: 1fr 110px;
+    column-gap: 1.5rem;
+    align-items: center;
+    margin-top: 4rem;
+    padding: 0 2rem;
+}
+
+.password-value {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 3rem;
+    padding: 0.8rem 3.5rem;
+    font-size: 2rem;
+    border: 1px solid #ddd;
+}
+
+.btn-strong {
+    margin-left: auto;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    background-color: var(--very-weak-color);
+    padding: 1rem 2rem;
+    border-radius: 12px;
+}
+
+.icon-box {
+    padding: 1rem;
+    margin-left: 1rem;
+}
+
+.icon-rotate {
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
+
+.icon-rotate.rotate {
+    transform: rotate(-360deg);
+    transform-origin: center;
+}
+
+.btn-copy {
+    color: #fff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: inherit;
+    background-color: #0070f6;
+    padding: 2rem 3.5rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: 0.3s linear;
+    width: 100%;
+    text-align: center;
+}
+
+.btn-copy:hover {
+    background-color: #005ac5;
+}
+
+.password-length {
+    display: flex;
+    padding: 0 2rem;
+    margin-top: 3rem;
+    justify-content: space-between;
+}
+
+.password-details {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+.password-length-text {
+    margin-right: 1.8rem;
+    font-weight: 300;
+}
+
+.password-length-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn-change-length {
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-change-length i {
+    font-size: 1.5rem;
+}
+
+.password-settings {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    margin-top: 4rem;
+}
+
+.password-settings-description {
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.checks-box {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.check-box {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    position: relative;
+}
+
+.check-box label {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+@media (max-width: 700px) {
+    .content {
+        width: 50rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .content {
+        width: 40rem;
+    }
+
+    .password-settings {
+        gap: 1rem;
+    }
+
+    .checks-box {
+        gap: 3rem;
+    }
+
+    .password-settings-description {
+        font-size: 1.2rem;
+    }
+    .password-length-text {
+        margin-right: 0.5rem;
+    }
+
+    .password-length-text {
+        font-size: 1.2rem;
+    }
+
+    .btn-strong {
+        display: none;
+    }
+
+    .password {
+        width: 10rem;
+        overflow: hidden;
+    }
+
+    .details {
+        font-size: 1.6rem;
+    }
+}
