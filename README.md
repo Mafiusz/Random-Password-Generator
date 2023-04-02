@@ -18,7 +18,7 @@ Users should be able to:
 -   select which type of signs are able to be in pasword,
 -   copy generated password to clipboard
 
-# 🟢 Live demo [Random Password Generator]()
+# 🟢 Live demo [Random Password Generator](https://thriving-squirrel-018761.netlify.app/)
 
 # 📷 Screenshot
 
